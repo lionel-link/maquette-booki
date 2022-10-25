@@ -18,15 +18,15 @@
     <header>
         <nav class="navbar">
             <ul class="navbar__menu">
-                <li><a href="#"><img src="assets/Booki.png" alt="Logo Booki" width="80"></a></li>
-                <li><a href="#" class="navbar__menu__item">Hébergements</a></li>
-                <li><a href="#" class="navbar__menu__item">Activités</a></li>
+                <li><a href="#"><img class="logo" src="assets/Booki.png" alt="Logo Booki" width="80"></a></li>
+                <li class="navbar__menuItem"><a href="#hebergements" class="navbar__menu__item">Hébergements</a></li>
+                <li class="navbar__menuItem"><a href="#activites" class="navbar__menu__item">Activités</a></li>
             </ul>
         </nav>
     </header>
     <div class="container">
         <div>
-            <h4 class="title">Trouvez votre hébergement pour des vacances de rêves</h4>
+            <h1 class="title">Trouvez votre hébergement pour des vacances de rêves</h1>
             <span>En plein centre ville ou en pleine nature</span>
             <div class="searchbar">
                 <form action="" method="get">
@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="filter">
-            <h4 class="filter__title">Filtres</h4>
+            <div class="filter__title">Filtres</div>
             <span class="filter__button"><i class="fa-solid fa-money-bill-wave filter__icon"
                     aria-hidden="true"></i>Économique</span>
             <span class="filter__button"><i class="fa-solid fa-child filter__icon"
@@ -52,9 +52,9 @@
 
         <div class="cardContainer ">
             <div class="cardContainer__house ">
-                <p class="cardContainer__house__title">Hébergements à Marseille</p>
+                <p id="hebergements" class="cardContainer__houseTitle">Hébergements à Marseille</p>
                 <div class="cardBlock">
-                    <div class="card">
+                    <a class="card" href="#">
                         <img class="card__img" src="assets/Hebergement/auberge-la-cannebiere.jpg"
                             alt="image du logement">
                         <div class="card__content">
@@ -67,8 +67,8 @@
                                     class="fa-sharp fa-solid fa-star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a class="card" href="#">
                         <img class="card__img" src="assets/Hebergement/hotel-du-port.jpg" alt="image du logement">
                         <div class="card__content">
                             <h4 class="card__title">Hôtel du port</h4>
@@ -80,9 +80,10 @@
                                     class="fa-solid fa-star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <img class="card__img" src="assets/Hebergement/hotel-les-mouettes.jpg" alt="image du logement">
+                    </a>
+                    <a class="card" href="#"">
+                        <img class=" card__img" src="assets/Hebergement/hotel-les-mouettes.jpg"
+                        alt="image du logement">
                         <div class="card__content">
                             <h4 class="card__title">Hôtel les mouettes</h4>
                             <p class="card__text">Nuit à partir de 76<strong class="card__price">€</strong>
@@ -93,8 +94,8 @@
                                     class="fa-sharp fa-solid fa-star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a class="card" href="#">
                         <img class="card__img" src="assets/Hebergement/hotel-de-la-mer.jpg" alt="image du logement">
                         <div class="card__content">
                             <h4 class="card__title">Hôtel de la mer</h4>
@@ -106,8 +107,8 @@
                                 <i class="fa-sharp fa-solid fa-star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a class="card" href="#">
                         <img class="card__img" src="assets/Hebergement/auberge-le-panier.jpg" alt="image du logement">
                         <div class="card__content">
                             <h4 class="card__title">Auberge Le Panier</h4>
@@ -119,8 +120,8 @@
                                     class="fa-sharp fa-solid fa-star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a class="card" href="#">
                         <img class="card__img" src="assets/Hebergement/hotel-chez-amina.jpg" alt="image du logement">
                         <div class="card__content">
                             <h4 class="card__title">Hôtel chez Amina</h4>
@@ -132,17 +133,17 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <h4 class="left-card-section__textEnd">Afficher plus</h4>
+                <h4 class="cardContainer_textEnd">Afficher plus</h4>
             </div>
             <div class="cardContainer__mostPopular">
-                <h4 class="cardContainer__mostPopular__title">
+                <h4 class="cardContainer__mostPopularTitle">
                     Les plus populaires
-                    <i class="fa-solid fa-star cardContainer__mostPopular__icon"></i>
+                    <i class="fa-solid fa-chart-line cardContainer__mostPopular__icon"></i>
                 </h4>
-                <div class="cardBlock--column">
-                    <div class="card img--left">
+                <div class="cardBlock card__column">
+                    <a class="card img--left" href="#">
                         <img class="card__img" src="assets/Hebergement/hotel-le-soleil.jpg" alt="image du logement">
                         <div class="card__content">
                             <h4 class="card__title">Hôtel Le soleil du matin</h4>
@@ -154,8 +155,8 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card img--left">
+                    </a>
+                    <a class="card img--left" href="#">
                         <img class="card__img" src="assets/Hebergement/au-coeur-eau.jpg" alt="image du logement">
                         <div class="card__content">
                             <h4 class="card__title">Au cœur de l'eau Chambres d'hôtes</h4>
@@ -167,8 +168,8 @@
                                     class="fa-sharp fa-solid fa-star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card img--left">
+                    </a>
+                    <a class="card img--left" href="#">
                         <img class="card__img" src="assets/Hebergement/hotel-tout-bleu.jpg" alt="image du logement">
                         <div class="card__content">
                             <h4 class="card__title">Hôtel Tout bleu et Blanc</h4>
@@ -180,42 +181,58 @@
                                     class="fa-sharp fa-solid fa-star"></i>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="activityContainer ">
-            <p class="activityContainer__title">Activités à Marseille</p>
-            <div class="PhotoCardContainer">
-                <div class="Photocard">
-                    <img class="Photocard__img" src="assets/activites/vieux-port.jpg" alt="vieux-port">
-                    <p class="Photocard__title">Vieux port</p>
+            <div id="activites" class="activityContainer__title">Activités à Marseille</div>
+            <div class="activityBlock">
+                <div class="photoCardContainer">
+                    <div class="photocard">
+                        <img class="photocard__img" src="assets/activites/vieux-port.jpg" alt="vieux-port">
+                        <div class="photocard__title">Vieux port</div>
+                    </div>
+                </div>
+                <div class="photoCardContainer">
+                    <div class="photocard">
+                        <img class="photocard__img" src="assets/activites/fort-de-pomegues.jpg" alt="vieux-port">
+                        <div class="photocard__title">Fort de Pomègues</div>
+                    </div>
+                </div>
+                <div class="photoCardContainer">
+                    <div class="photocard">
+                        <img class="photocard__img" src="assets/activites/parc-national-calanques.jpg" alt="vieux-port">
+                        <div class="photocard__title">Parc national des Calanques</div>
+                    </div>
+                </div>
+                <div class="photoCardContainer">
+                    <div class="photocard">
+                        <img class="photocard__img" src="assets/activites/notre-dame-de-la-garde.jpg" alt="vieux-port">
+                        <div class="photocard__title">Notre-Dame-de-la-Garde</div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 
     <footer class="footer">
-        <div class="footerSection">
-            <div class="footerSection__item">
-                <h5 class="footerSection__item__title">A propos</h5>
-                <p>Fonctionnement du site</p>
-                <p>Conditions générales de vente</p>
-                <p>Données et confidentialité</p>
-            </div>
-            <div class="footerSection__item">
-                <h5 class="footerSection__item__title">Nos Hebergements</h5>
-                <p>Charte qualité</p>
-                <p>Soumettre votre hôtel</p>
-            </div>
-            <div class="footerSection__item">
-                <h5 class="footerSection__item__title">Assistance</h5>
-                <p>Centre d'aide</p>
-                <p>Nous contacter</p>
-            </div>
+        <div class="footerItem">
+            <ul class="footerItem__title">A propos</ul>
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales de vente</li>
+            <li>Données et confidentialité</li>
         </div>
-
+        <div class="footerItem">
+            <ul class="footerItem__title">Nos Hebergements</ul>
+            <li>Charte qualité</li>
+            <li>Soumettre votre hôtel</li>
+        </div>
+        <div class="footerItem">
+            <ul class="footerItem__title">Assistance</ul>
+            <li>Centre d'aide</li>
+            <li>Nous contacter</li>
+        </div>
     </footer>
 
 </body>
