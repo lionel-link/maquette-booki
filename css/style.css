@@ -1,10 +1,14 @@
 html,
 body {
-    width: 1400px;
     margin: auto;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
+
+body {
+    width: 1440px;
+}
+
 
 a {
     color: black;
@@ -378,19 +382,19 @@ i.fa-sharp.fa-solid.fa-star {
 
 /******************************************************             Responsive Tablette               *********************************************/
 
-@media (max-width:992px) and (min-width:768px) {
 
+ @media (max-width:1440px) {
     body {
-        width: 992px;
+        width: 1024px;
         margin: auto;
-    }
-
-    .cardContainer {
-        display: block;
     }
 
     .filter {
         justify-content: inherit;
+    }
+
+    .cardContainer {
+        display: block;
     }
 
     .cardContainer__house {
@@ -414,6 +418,11 @@ i.fa-sharp.fa-solid.fa-star {
     .card__title {
         font-size: 14px;
     }
+
+    /* correction de la classe */
+    /* .card--imgLeft .card__img {
+        width: 106px;
+    } */
 
     .img--left .card__img {
         width: 106px;
@@ -446,16 +455,16 @@ i.fa-sharp.fa-solid.fa-star {
         margin: 60px 0 35px 0;
     }
 
-}
+} 
 
 
 /******************************************************             Responsive Mobile               *********************************************/
 
 
-@media (max-width: 767px) {
+ @media (max-width: 1024px) {
 
     body {
-        max-width: 767px;
+        max-width: 375px;
     }
 
     .navbar {
