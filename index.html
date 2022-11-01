@@ -26,13 +26,14 @@
     </header>
     <div class="container">
         <div>
-            <h1 class="title">Trouvez votre hébergement pour des vacances de rêves</h1>
+            <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
             <span>En plein centre ville ou en pleine nature</span>
             <div class="searchbar">
-                <form action="" method="get">
+                <form class="searchbar__form" action="" method="get">
                     <i class="fa-sharp fa-solid fa-location-dot searchbar__icon" aria-hidden="true"></i>
                     <input class="searchbar__input" type="text" placeholder="Marseille, France" name="q">
                     <button class="searchbar__button" type="submit">Rechercher</button>
+                    <button class="searchbar__buttonMobile" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
         </div>
@@ -52,7 +53,7 @@
 
         <div class="cardContainer ">
             <div class="cardContainer__house ">
-                <p id="hebergements" class="cardContainer__houseTitle">Hébergements à Marseille</p>
+                <div id="hebergements" class="cardContainer__houseTitle">Hébergements à Marseille</div>
                 <div class="cardBlock">
                     <a class="card" href="#">
                         <img class="card__img" src="assets/Hebergement/auberge-la-cannebiere.jpg"
