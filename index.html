@@ -25,15 +25,17 @@
         </nav>
     </header>
     <div class="container">
-        <div>
+        <div class="searchBar-block">
             <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
             <span>En plein centre ville ou en pleine nature</span>
             <div class="searchbar">
                 <form class="searchbar__form" action="" method="get">
                     <i class="fa-sharp fa-solid fa-location-dot searchbar__icon" aria-hidden="true"></i>
                     <input class="searchbar__input" type="text" placeholder="Marseille, France" name="q">
-                    <button class="searchbar__button" type="submit">Rechercher</button>
-                    <button class="searchbar__buttonMobile" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="searchbar__button" type="submit">
+                        <i class="fa-solid fa-magnifying-glass searchbar__buttonIcon" title="Rechercher"></i>
+                        <span class="searchbar__buttonText">Rechercher</span>
+                    </button>
                 </form>
             </div>
         </div>
@@ -136,7 +138,7 @@
                         </div>
                     </a>
                 </div>
-                <h4 class="cardContainer_textEnd">Afficher plus</h4>
+                <h4 class="cardContainer_textEnd"><a href="#">Afficher plus</a></h4>
             </div>
             <div class="cardContainer__mostPopular">
                 <h4 class="cardContainer__mostPopularTitle">
@@ -219,20 +221,20 @@
 
     <footer class="footer">
         <div class="footerItem">
-            <ul class="footerItem__title">A propos</ul>
-            <li>Fonctionnement du site</li>
-            <li>Conditions générales de vente</li>
-            <li>Données et confidentialité</li>
+            <ul class="footerItem__title"><a href="#">A propos</a></ul>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales de vente</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
         </div>
         <div class="footerItem">
-            <ul class="footerItem__title">Nos Hebergements</ul>
-            <li>Charte qualité</li>
-            <li>Soumettre votre hôtel</li>
+            <ul class="footerItem__title"><a href="#">Nos Hebergements</a></ul>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Soumettre votre hôtel</a></li>
         </div>
         <div class="footerItem">
-            <ul class="footerItem__title">Assistance</ul>
-            <li>Centre d'aide</li>
-            <li>Nous contacter</li>
+            <ul class="footerItem__title"><a href="#">Assistance</a></ul>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
         </div>
     </footer>
 

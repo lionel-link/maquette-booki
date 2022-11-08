@@ -75,8 +75,13 @@ header {
     border-radius: 15px 0 0 15px;
 }
 
+.searchbar__icon::before {
+    position: relative;
+    top: calc(50% - 8px);
+}
+
 .searchbar__input {
-    height: 38px;
+    height: 39px;
     margin: -4px;
     padding: 4px;
     border: 1px solid #F2F2F2;
@@ -88,15 +93,14 @@ header {
 
 .searchbar__button {
     color: white;
-    padding: 15px 16px;
-    gap: 10px;
+    padding: 17px 16px 15px 16px;
     border-radius: 0 15px 15px 0;
     background-color: #0065FC;
     border: 0;
     cursor: pointer;
 }
 
-.searchbar__buttonMobile {
+.searchbar__buttonIcon {
     display: none;
 }
 
@@ -105,7 +109,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 950px;
-    margin: 30px 0;
+    margin: 40px 0;
 }
 
 .filter span {
@@ -146,7 +150,7 @@ header {
 }
 
 .indice {
-    margin: 35px 0;
+    margin-bottom: 35px;
 }
 
 .indice__icon {
@@ -166,7 +170,7 @@ header {
 
 
 .cardContainer__house {
-    padding: 35px 35px 0 35px;
+    padding: 40px 35px 0 35px;
     background-color: #F2F2F2;
     border-radius: 15px;
     margin-right: 50px;
@@ -245,7 +249,7 @@ header {
 
 
 .cardContainer__mostPopular {
-    padding: 35px;
+    padding: 40px 35px 0 35px;
     background-color: #F2F2F2;
     border-radius: 15px;
 }
@@ -266,9 +270,9 @@ header {
 }
 
 .cardContainer__mostPopular__icon {
+    font-size: 16px;
     float: right;
     color: #0065FC !important;
-    margin-right: 20px;
 }
 
 .cardBlock.cardcolumn {
@@ -380,7 +384,7 @@ i.fa-sharp.fa-solid.fa-star {
 
 /******************************************************             Responsive Tablette               *********************************************/
 
-@media (max-width:1440px) {
+@media (max-width:1456px) {
 
 
     body {
@@ -392,12 +396,8 @@ i.fa-sharp.fa-solid.fa-star {
         padding: 0 50px;
     }
 
-    .searchbar__buttonMobile {
-        display: none;
-    }
-
     .container {
-        padding: 0 50px;
+        padding: 0;
     }
 
     .cardContainer {
@@ -417,10 +417,6 @@ i.fa-sharp.fa-solid.fa-star {
         padding-bottom: 45px;
     }
 
-    .cardBlock.cardcolumn {
-        display: flex;
-    }
-
     .card.img--left {
         width: 252px;
         height: 145px;
@@ -428,6 +424,16 @@ i.fa-sharp.fa-solid.fa-star {
 
     .card__title {
         font-size: 14px;
+    }
+
+    .cardContainer__mostPopular {
+        padding: 30px 40px 0 40px;
+        background-color: #F2F2F2;
+        border-radius: 15px;
+    }
+
+    .cardContainer__mostPopularTitle {
+        margin: 0 0 25px 0;
     }
 
     .img--left .card__img {
@@ -454,7 +460,8 @@ i.fa-sharp.fa-solid.fa-star {
     }
 
     .cardBlock.card__column {
-        display: grid;
+        display: flex;
+        justify-content: space-between;
     }
 
     .activityContainer__title {
@@ -467,15 +474,22 @@ i.fa-sharp.fa-solid.fa-star {
 /******************************************************             Responsive Mobile               *********************************************/
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1040px) {
 
+    i {
+        font-size: inherit;
+    }
 
 
     body {
-        max-width: 375px;
+        max-width: 359px;
     }
 
     header {
+        padding: 0;
+    }
+
+    .container {
         padding: 0;
     }
 
@@ -512,45 +526,34 @@ i.fa-sharp.fa-solid.fa-star {
         text-align: center;
     }
 
-    .container {
-        padding: 0 20px;
+    .searchBar-block {
+        padding: 0 15px;
     }
 
     form.searchbar__form {
+        margin-top: 35px;
         display: flex;
     }
 
-    form.searchbar__form i {
-        position: relative;
-        top: calc(50% - 10px);
-    }
-
-
-    .searchbar__buttonMobile {
+    .searchbar__buttonIcon {
         display: block;
-        color: white;
-        padding: 15px 16px;
-        gap: 10px;
-        border-radius: 0 15px 15px 0;
-        background-color: #0065FC;
-        border: 0;
-        cursor: pointer;
+        position: relative;
+        top: calc(50% - 9px);
     }
 
-    .searchbar__button {
+    .searchbar__buttonText {
         display: none;
     }
 
     .searchbar__input {
         margin: 0;
-        height: 49px;
     }
-
 
     .filter {
         flex-wrap: wrap;
         width: 330px;
         justify-content: space-between;
+        padding: 0 14px;
     }
 
     .filter span {
@@ -592,6 +595,7 @@ i.fa-sharp.fa-solid.fa-star {
     .indice {
         display: flex;
         margin: 35px 0;
+        padding: 0 15px;
     }
 
     .indice__icon {
@@ -603,13 +607,22 @@ i.fa-sharp.fa-solid.fa-star {
         color: #0065FC;
     }
 
-    i.fa-solid.fa-info.indice__icon {
-        font-size: 16px;
-    }
-
     .cardContainer {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .cardContainer__mostPopular {
+        padding: 25px 15px 45px 15px;
+        border-radius: 0;
+    }
+
+    .cardContainer__mostPopular__icon {
+        margin-right: 0;
+    }
+
+    .cardContainer__mostPopularTitle {
+        margin: 0 0 25px 0;
     }
 
     .cardBlock.card__column {
@@ -627,10 +640,15 @@ i.fa-sharp.fa-solid.fa-star {
         margin-bottom: 11px;
     }
 
+    .img--left .card__img {
+        width: 127px;
+    }
+
     .cardContainer__house {
         background-color: white;
-        padding: 25px 10px 0 10px;
         border-radius: 0;
+        padding: 0 10px;
+        margin-bottom: 12px;
     }
 
     .cardBlock {
@@ -639,7 +657,7 @@ i.fa-sharp.fa-solid.fa-star {
     }
 
     .cardContainer__houseTitle {
-        margin: 20px 0;
+        margin: 25px 0 20px;
     }
 
     .cardContainer_textEnd {
@@ -654,13 +672,21 @@ i.fa-sharp.fa-solid.fa-star {
         padding-bottom: 25px;
     }
 
-    .cardContainer__house {
-        padding: 0;
+    .card {
+        width: 335px;
         margin-bottom: 12px;
     }
 
-    .card {
-        width: 335px;
+    .card__img {
+        height: 114px;
+    }
+
+    .card__title {
+        font-size: 16px;
+    }
+
+    .activityContainer {
+        margin: 0 12px 60px 12px;
     }
 
     .photocard {
@@ -673,11 +699,16 @@ i.fa-sharp.fa-solid.fa-star {
         height: 134px;
     }
 
+    .photocard__title {
+        justify-content: inherit;
+        padding: 0 20px;
+    }
+
     .footer {
         flex-direction: column;
     }
 
     .footerItem {
-        padding: 0 30px;
+        padding: 0 30px 30px;
     }
 }
