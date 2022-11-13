@@ -1,5 +1,5 @@
 body {
-    width: 1440px;
+    width: 1340px;
     margin: auto;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
@@ -26,26 +26,32 @@ header {
     display: flex;
     align-items: center;
     padding: 0;
+    margin-top: 48px;
 }
 
-.navbar__menu li:nth-of-type(1) {
+.blockLogo {
     flex: 1;
 }
 
 .navbar__menu li {
     list-style: none;
-    margin-right: 50px;
 }
 
-
-.navbar__menu__item {
-    padding: 15px;
-}
-
-/* .navbar__menu__item:hover {
-    border-top: 1px solid #0065FC;
+.navbar__menuItem--active {
+    border-top: 2px solid #0065FC;
     color: #0065FC;
-} */
+    margin-right: 57px;
+}
+
+
+.navbar__menuItem {
+    padding: 48px 0 0 0;
+}
+
+.navbar__menuItem:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
 
 .logo {
     width: 61.09px;
@@ -83,12 +89,11 @@ header {
 .searchbar__input {
     height: 39px;
     margin: -4px;
-    padding: 4px;
+    padding: 4px 0 4px 16px;
     border: 1px solid #F2F2F2;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
 }
 
 .searchbar__button {
@@ -112,8 +117,8 @@ header {
     margin: 40px 0;
 }
 
-.filter span {
-    margin-left: 32px;
+.filter button {
+    margin-left: 22px;
 }
 
 .filter__title {
@@ -134,6 +139,7 @@ header {
 }
 
 .filter__button {
+    width: 160px;
     display: flex;
     align-items: center;
     background-color: white;
@@ -146,16 +152,18 @@ header {
 }
 
 .filter__button:hover {
-    transform: scale(1.1);
+    background-color: #DEEBFF;
 }
 
 .indice {
     margin-bottom: 35px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .indice__icon {
     padding: 5px 10px;
-    border: 1px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 147px;
     font-size: 16px;
     color: #0065FC;
@@ -165,23 +173,19 @@ header {
 
 .cardContainer {
     display: flex;
-    margin: 0 0 30px 0;
+    gap: 40px;
+    margin-bottom: 30px;
 }
 
 
 .cardContainer__house {
-    padding: 40px 35px 0 35px;
-    background-color: #F2F2F2;
-    border-radius: 15px;
-    margin-right: 50px;
-    width: 60%;
-    flex: 1;
+    flex: 0 0 880px;
 }
 
 .cardContainer__houseTitle {
     font-size: 22px;
     font-weight: 700;
-    margin: 0 0 20px 20px;
+    margin-top: 20px;
 }
 
 .cardBlock {
@@ -196,11 +200,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    justify-self: center;
     background-color: white;
     border-radius: 20px;
     margin-bottom: 30px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-sizing: border-box;
 }
 
 .card__img {
@@ -208,6 +212,7 @@ header {
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     border: 5px solid #FFFFFF;
+    box-sizing: border-box;
 }
 
 .card__content {
@@ -216,7 +221,8 @@ header {
 }
 
 .card__title {
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 700;
     margin: 4px 0 0px 10px;
 }
 
@@ -237,11 +243,13 @@ header {
     margin: 1px 0 10px 10px;
 }
 
-.cardContainer_textEnd {
-    margin-left: 20px;
+
+.cardContainerStyle {
+    padding: 40px 40px 0 40px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    box-sizing: border-box;
 }
-
-
 
 
 /******************************************************             Most Popular section                *********************************************/
@@ -249,20 +257,18 @@ header {
 
 
 .cardContainer__mostPopular {
-    padding: 40px 35px 0 35px;
-    background-color: #F2F2F2;
-    border-radius: 15px;
+    flex: 0 0 420px;
 }
 
 .cardContainer__mostPopular .card {
     width: 345px;
-    height: 145px;
+    height: 144px;
 }
 
 .cardContainer__mostPopularTitle {
     font-size: 22px;
     font-weight: 700;
-    margin: 0 0 20px 0;
+    margin-bottom: 25px;
 }
 
 .cardBlock.card__column {
@@ -285,8 +291,8 @@ header {
 }
 
 .img--left .card__img {
-    width: 130px;
-    height: 135px;
+    width: 137px;
+    height: 144px;
     border-radius: 10px 0 0 10px;
     margin-right: 0;
 }
@@ -339,12 +345,13 @@ i.fa-sharp.fa-solid.fa-star {
 }
 
 .photocard__title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: -4px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
     height: 56px;
-    margin: -3px 0px;
+    padding-left: 20px;
     font-weight: bold;
     border-radius: 0 0 30px 30px;
     box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
@@ -380,6 +387,11 @@ i.fa-sharp.fa-solid.fa-star {
     margin: 12px 0;
 }
 
+.footerItem ul {
+    margin: 20px 0;
+    padding: 0;
+}
+
 
 
 /******************************************************             Responsive Tablette               *********************************************/
@@ -388,12 +400,8 @@ i.fa-sharp.fa-solid.fa-star {
 
 
     body {
-        width: 1024px;
+        width: 880px;
         margin: 0 auto;
-    }
-
-    header {
-        padding: 0 50px;
     }
 
     .container {
@@ -404,8 +412,12 @@ i.fa-sharp.fa-solid.fa-star {
         display: block;
     }
 
+    .navbar__menuItem--active {
+        border-top: inherit;
+    }
+
     .filter {
-        justify-content: inherit;
+        width: 830px;
     }
 
     .cardContainer__house {
@@ -419,7 +431,7 @@ i.fa-sharp.fa-solid.fa-star {
 
     .card.img--left {
         width: 252px;
-        height: 145px;
+        height: 144px;
     }
 
     .card__title {
@@ -427,7 +439,7 @@ i.fa-sharp.fa-solid.fa-star {
     }
 
     .cardContainer__mostPopular {
-        padding: 30px 40px 0 40px;
+        padding: 35px 40px 0 40px;
         background-color: #F2F2F2;
         border-radius: 15px;
     }
@@ -438,6 +450,7 @@ i.fa-sharp.fa-solid.fa-star {
 
     .img--left .card__img {
         width: 106px;
+        height: 144px;
     }
 
     .img--left .card__title {
@@ -496,11 +509,16 @@ i.fa-sharp.fa-solid.fa-star {
     .navbar__menu {
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 20px;
 
     }
 
-    .navbar__menu li:first-child {
-        padding-bottom: 20px;
+    .navbar__menuItem--active {
+        border-top: inherit;
+        color: inherit;
+    }
+
+    .navbar__menu .blockLogo {
         text-align: center;
         flex: inherit;
         width: 100%;
@@ -511,10 +529,19 @@ i.fa-sharp.fa-solid.fa-star {
     }
 
     .navbar__menuItem {
-        padding: 20px 13px;
+        display: block;
         border-bottom: 4px solid #DEEBFF;
         font-weight: 500;
     }
+
+    .navbar__menuItem:hover {
+        border-top: inherit;
+        color: inherit;
+    }
+
+        .navbar__menuItem--active {
+            margin-right: inherit;
+        }
 
     .navbar__menuItem:hover {
         border-bottom: 4px solid #0065FC;
@@ -551,20 +578,13 @@ i.fa-sharp.fa-solid.fa-star {
 
     .filter {
         flex-wrap: wrap;
-        width: 330px;
+        width: 335px;
+        margin: 0 20px;
         justify-content: space-between;
-        padding: 0 14px;
     }
 
     .filter span {
         margin-left: 0;
-    }
-
-    .filter__title {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 21px;
-        padding-bottom: 10px;
     }
 
     .filter__icon {
@@ -574,14 +594,12 @@ i.fa-sharp.fa-solid.fa-star {
 
     .filter__button {
         font-size: 11px;
-        width: 156px;
-        display: flex;
-        border: 2px solid #F2F2F2;
-        border-radius: 30px;
-        height: 46px;
         margin: 10px 0;
         padding: 0;
-        font-weight: 700;
+    }
+
+    .filter button {
+        margin: 15px 0 0 0;
     }
 
     .filter__title {
@@ -595,24 +613,23 @@ i.fa-sharp.fa-solid.fa-star {
     .indice {
         display: flex;
         margin: 35px 0;
-        padding: 0 15px;
+        padding-left: 20px;
     }
 
     .indice__icon {
-        padding: 9px 15px;
-        margin-right: 10px;
-        border: 1px solid #F2F2F2;
-        border-radius: 147px;
-        font-size: 16px;
-        color: #0065FC;
+        padding: 9px 14px;
+        margin-right: 5px;
+        font-size: 12px;
     }
 
     .cardContainer {
         display: flex;
+        gap: inherit;
         flex-direction: column-reverse;
     }
 
     .cardContainer__mostPopular {
+        flex: inherit;
         padding: 25px 15px 45px 15px;
         border-radius: 0;
     }
@@ -641,10 +658,11 @@ i.fa-sharp.fa-solid.fa-star {
     }
 
     .img--left .card__img {
-        width: 127px;
+        width: 137px;
     }
 
     .cardContainer__house {
+        flex: inherit;
         background-color: white;
         border-radius: 0;
         padding: 0 10px;
@@ -678,7 +696,7 @@ i.fa-sharp.fa-solid.fa-star {
     }
 
     .card__img {
-        height: 114px;
+        height: 124px;
     }
 
     .card__title {
