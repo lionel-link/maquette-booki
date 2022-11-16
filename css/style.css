@@ -293,7 +293,7 @@ header {
 .img--left .card__img {
     width: 137px;
     height: 144px;
-    border-radius: 10px 0 0 10px;
+    border-radius: 20px 0 0 20px;
     margin-right: 0;
 }
 
@@ -539,9 +539,9 @@ i.fa-sharp.fa-solid.fa-star {
         color: inherit;
     }
 
-        .navbar__menuItem--active {
-            margin-right: inherit;
-        }
+    .navbar__menuItem--active {
+        margin-right: inherit;
+    }
 
     .navbar__menuItem:hover {
         border-bottom: 4px solid #0065FC;
